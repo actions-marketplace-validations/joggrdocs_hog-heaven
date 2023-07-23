@@ -14,9 +14,6 @@
   <a href="https://github.com/joggrdocs/hog-heaven/actions/workflows/github-code-scanning/codeql">
     <img alt="CodeQL" src="https://github.com/joggrdocs/hog-heaven/actions/workflows/github-code-scanning/codeql/badge.svg">
   </a>
-  <a href="https://github.com/joggrdocs/hog-heaven/actions/workflows/npm-publish.yaml">
-    <img alt="Publish to npm" src="https://github.com/joggrdocs/hog-heaven/actions/workflows/npm-publish.yaml/badge.svg">
-  </a>
   <a href="https://github.com/joggrdocs/tempo/actions/workflows/ci.yaml">
     <img alt="CI" src="https://github.com/joggrdocs/hog-heaven/actions/workflows/ci.yaml/badge.svg">
   </a>
