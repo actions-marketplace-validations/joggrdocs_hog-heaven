@@ -14,7 +14,7 @@
   <a href="https://github.com/joggrdocs/hog-heaven/actions/workflows/github-code-scanning/codeql">
     <img alt="CodeQL" src="https://github.com/joggrdocs/hog-heaven/actions/workflows/github-code-scanning/codeql/badge.svg">
   </a>
-  <a href="https://github.com/joggrdocs/tempo/actions/workflows/ci.yaml">
+  <a href="https://github.com/joggrdocs/hog-heaven/actions/workflows/ci.yaml">
     <img alt="CI" src="https://github.com/joggrdocs/hog-heaven/actions/workflows/ci.yaml/badge.svg">
   </a>
   <br/>
