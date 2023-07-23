@@ -57,3 +57,12 @@ jobs:
           content: "Release - ${{ github.repository }}@${{ github.ref_name }}" 
           # => outputs: "Release - @joggrdocs/hog-heaven@v1.0.0" 
 ```
+
+## Note on existing "PostHog Annotations" action 🤦‍♂️
+
+So our CTO built this late on a Saturday night will drinking 🍺 while chatting on discord with "coding friends". He did NOT do proper research and realized after he was finished and pushed it to the marketplace, that PostHog already built something that DOES THE EXACT SAME THING that they use internally. In the spirit of the [sunken cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost) and the rationalization that his version is typed, newer, and has a snazzy logo... we're going to use this package and continue to invest in it (as long as we use PostHog).
+
+Note to reader, I realize if you look at the git blame, the "CTO" is writing in the third person. After 3 hours on a Saturday night I needed some humor... cheers 🍻.
+
+[PostHog Github Action](https://github.com/marketplace/actions/posthog-annotations)
+
