@@ -1,6 +1,9 @@
 name: '@joggrdocs/hog-heaven'
 description: 'Github action for sending release annotations to PostHog, aka make sure your PostHog cloud is in "Hog Heaven".'
 author: 'joggrdocs'
+branding:
+  icon: 'chevron-up'
+  color: 'yellow'
 inputs:
   api_key:
     required: true
