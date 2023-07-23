@@ -2,10 +2,11 @@ name: 'Test Annotations in PostHog'
 
 on:
   workflow_dispatch:
-    content:
-      description: 'Content to send as an annotation'
-      type: string
-      required: true
+    inputs:
+      content:
+        description: 'Content to send as an annotation'
+        required: true
+        default: 'Test Annotation'
 
 jobs:
   publish:
