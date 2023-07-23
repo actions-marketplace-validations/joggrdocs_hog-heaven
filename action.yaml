@@ -16,4 +16,4 @@ inputs:
     description: 'The content to send to PostHog as annotations'
 runs:
   using: 'node16'
-  main: 'dist/index.js'
+  main: 'build/index.js'
