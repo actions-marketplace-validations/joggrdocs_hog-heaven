@@ -9,8 +9,8 @@ on:
         default: 'Test Annotation'
 
 jobs:
-  publish:
-    name: Publish
+  test:
+    name: Test!
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
