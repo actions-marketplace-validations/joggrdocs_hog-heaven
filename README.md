@@ -36,5 +36,26 @@ Github action for sending release annotations to PostHog, aka make sure your Pos
 ## Usage
 
 ```yaml
+name: 'Release the Kraken'
 
+on:
+  release:
+    types: [created, published]
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v1
+
+      # ... do some release things...
+      
+      - name: Check if package.json Version matches tag
+        uses: @joggrdocs/hog-heaven
+        with:
+          api_key: ${{ secrets.POSTHOG_API_KEY }}
+          project_id: 1111111
+          content: "Release - ${{ github.repository }}@${{ github.ref_name }}" # outputs: "Release - @joggrdocs/hog-heaven@v1.0.0" 
 ```
