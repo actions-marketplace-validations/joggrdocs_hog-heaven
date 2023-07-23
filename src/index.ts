@@ -9,7 +9,6 @@ async function run(): Promise<void> {
     const content = core.getInput('content');
     const client = new PostHogHttpClient({ apiKey, projectId });
     await client.annotate(content);
-    console.log('Annotated');
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message);
   }
