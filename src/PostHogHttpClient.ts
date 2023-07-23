@@ -10,19 +10,16 @@ class PostHogHttpClient {
   }
 
   public async annotate(content: string): Promise<void> {
-    const result = await axios.post(
-      this.buildUrl(`/projects/${this.projectId}/annotations`),
-      { content },
-      {
-        headers: {
-          Authorization: `Bearer ${this.apiKey}`
-        }
+    await axios({
+      method: 'POST',
+      url: this.buildUrl(`projects/${this.projectId}/annotations/`),
+      data: {
+        content
+      },
+      headers: {
+        Authorization: `Bearer ${this.apiKey}`
       }
-    );
-
-    if (result.status !== 200) {
-      throw new Error(`Failed to annotate: ${result.statusText}`);
-    }
+    });
   }
 
   private buildUrl(path: string): string {
