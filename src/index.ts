@@ -7,6 +7,7 @@ async function run(): Promise<void> {
     const apiKey = core.getInput('api_key');
     const projectId = core.getInput('project_id');
     const content = core.getInput('content');
+    console.log(`Annotating content: ${content} for project ${projectId}`);
     const client = new PostHogHttpClient({ apiKey, projectId });
     await client.annotate(content);
   } catch (error) {
