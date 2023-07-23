@@ -7,7 +7,7 @@
     "test": "jest --passWithNoTests",
     "build": "tsc",
     "package": "ncc build --source-map --license licenses.txt --out build",
-    "pre-commit": "npm run format:fix && npm run lint:fix && npm run build && npm run package",
+    "pre-commit": "npm run format:fix && npm run lint:fix && npm run build && npm run package && git add .",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint:check": "eslint src/**/*.ts",
