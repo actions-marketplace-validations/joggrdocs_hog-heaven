@@ -31,4 +31,10 @@
 
 # Overview
 
-Github action for sending release annotations to Posthog, aka make sure your Posthog is in "Hog Heaven".
+Github action for sending release annotations to PostHog, aka make sure your PostHog cloud is in "Hog Heaven".
+
+## Usage
+
+```yaml
+
+```
