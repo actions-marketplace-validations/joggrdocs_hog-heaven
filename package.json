@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "build": "tsc",
-    "package": "ncc build --source-map --license licenses.txt",
+    "package": "ncc build --source-map --license licenses.txt --out build",
     "pre-commit": "npm run format:fix && npm run lint:fix && npm run build && npm run package",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
