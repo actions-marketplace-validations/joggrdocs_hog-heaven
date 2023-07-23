@@ -54,5 +54,6 @@ jobs:
         with:
           api_key: ${{ secrets.POSTHOG_API_KEY }}
           project_id: 1111111
-          content: "Release - ${{ github.repository }}@${{ github.ref_name }}" # outputs: "Release - @joggrdocs/hog-heaven@v1.0.0" 
+          content: "Release - ${{ github.repository }}@${{ github.ref_name }}" 
+          # => outputs: "Release - @joggrdocs/hog-heaven@v1.0.0" 
 ```
