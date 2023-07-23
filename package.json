@@ -25,11 +25,6 @@
     "url": "https://github.com/joggrdocs/hog-heaven/issues"
   },
   "homepage": "https://github.com/joggrdocs/hog-heaven#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run pre-commit && git add -A ."
-    }
-  },
   "dependencies": {
     "@actions/core": "^1.10.0",
     "axios": "^1.4.0"
