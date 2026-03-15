@@ -55,7 +55,7 @@ jobs:
           git push origin HEAD --force
 
       - name: "📝 Generate Release Notes (user-input)"
-        uses: toolmantim/release-drafter@v6
+        uses: toolmantim/release-drafter@v7
         if: ${{ inputs.version != 'calculate' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
